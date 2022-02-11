@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset css */
+html, body { 
+	width: 100%; 
+	height: 100% 
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button {
+	margin: 0; 
+	padding: 0; 
+}
+
+img,fieldset { 
+	border: 0; 
+} 
+fieldset legend {
+	display: none;
+}
+
+body,h1,h2,h3,h4,input,textarea,button,select,option { 
+	font-family: 'NanumSquare','돋움',sans-serif; 
+	font-size: 14px; 
+} 
+
+ol,il,li { 
+	list-style: none; 
+}
+
+img { 
+	vertical-align: top; 
+} 
+
+a { 
+	text-decoration: none;
+}
+
+a:hover, a:focus { 
+	text-decoration: none;
+}
+
+table { 
+	border-collapse: collapse;
+} 
+
+
+/* header */
+
+img {
+	backface-visibility: hidden;
+}
+
+div#header {
+
+}
+
+div#header ul {
+	padding : 12px 16px;
+	margin: 0 auto;
+}
+
+div#header ul li {
+	display: inline;
+}
+div#header ul li, div#header ul li img {
+	vertical-align: middle;
+}
+div#header ul li.logo {
+	
+}
+
+div#header ul li.logo img {
+	width: 100px;
+	height: auto;
+}
+
+div#header ul li.title {
+	font-size: 18px;
+	color : #242424;
+	font-weight: bold;
+	margin-left: 8px;
+}
+
+div#header ul li.mainmenu {
+	float: right; 
+	line-height: 2.3;
+}
+
+div#header ul li.mainmenu img {
+	width: 24px;
+	height: auto;
+}
+
+
+
+/* gnb */
+div#gnb {
+	/* width: 100%; */
+    /* position: relative; */
+    /* clear: both; */
+    /* position: relative;*/
+}
+div#gnb ul {
+    border-bottom: 1px solid #f15a29;
+	padding: 0 16px;
+}
+div#gnb ul li, div #listHeader ul li, div.item_list ol li ul li {
+	display: inline;
+}
+/*div#gnb ul li.tabsOn a {
+	background-color: #f15a29;
+}*/
+
+/*div#gnb ul li.tab a.active {
+	color: #fff;
+	background-color: #f15a29;
+}
+div#gnb ul li#tabF a {
+	background-color: none;
+}*/
+
+div#gnb ul li a {
+	text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #626c76;
+    padding: 9px 16px;
+    border-radius: 10px 10px 0 0;
+	box-sizing: border-box;
+    line-height: 38px;
+}
+div#gnb ul li a.active, div#gnb ul li a.hover {
+	color: #fff;
+	background-color: #f15a29;
+}
+
+.content {
+	display: none;
+	background-color: #f1f1f1;
+}
+
+div#item #listHeader {
+	clear: both;
+}
+div.content #listHeader ul {
+	padding: 5px 12px;
+}
+div.content #listHeader ul li.list_sch {
+	float: right;
+}
+div.content #listHeader ul li.list_sch input {
+	border: 1px solid #cfcfcf;
+    line-height: 2;
+    border-radius: 3px;
+	padding-left: 10px;
+}
+div.content #listHeader ul li.list_total {
+	line-height: 2.5;
+}
+div.content #listHeader ul li.list_total div, div.content #listHeader ul li.list_sch div, div.item_list ol li div ul li {
+	display: inline-block;
+}
+div.content #listHeader ul li.list_sch div span a img {
+	width: 24px;
+	vertical-align: middle;
+}
+div#item .item_list ol > li {
+	/*margin-bottom: 5px;*/
+	border-bottom: 5px solid #f1f1f1;
+}
+div.item_list ol li div {
+	background-color: #fff;
+	padding: 12px;
+}
+
+div#item .item_list ol li div ul li.item_name {
+	min-width: 50%;
+}
+div#item .item_list ol li div ul li.item_gp {
+	min-width: 25%;
+}
+div#item .item_list ol li div ul li.item_price {
+	min-width: 23%;
+	text-align: right;
+}
+
+div#floatBtn {
+	position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+div#floatBtn span a img {
+	width: 45px;
+}
