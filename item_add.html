@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>상품관리-상품추가</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style type="text/css">
+	@import url("css/itemcss.css");
+	</style>
+	
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.multi-select.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+        $('#itemGP_select, #optionGP_select').multiSelect();
+
+    });
+	</script>
+	
+</head>
+
+<body>
+	<div>
+		<div id="header">
+			<ul>
+				<li class="logo"><img src="img/logo_pos.png" alt="오더엔포스"></li>
+				<li class="title">상품관리</li>
+				<li class="mainmenu"><a href ="#"><img src="img/ic_mainmenu.png" alt="메뉴"></a></li>
+			</ul>
+		</div>
+
+		<div id="gnb">
+			<ul>	
+				<li><a href ="item_gp.html" class="tablinks">상품그룹</a></li>
+				<li><a href ="item.html" class="tablinks active">상품</a></li>
+				<li><a href ="option_gp.html" class="tablinks">옵션그룹</a></li>
+				<li><a href ="option.html" class="tablinks">옵션</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 상품 본문 -->
+	<div id="item" class="content">
+		
+		
+		<!-- 상품 : 검색부분 -->
+		<div id="listHeader"> 
+			<ul>
+				<li class="list_total">
+					<div>
+						<span>총</span>
+						<span>52</span>
+						<span>개 상품</span>
+					</div>
+				</li>
+				<li class="list_sch">
+					<div>
+						<span><input type="text" placeholder="상품명 검색"></span>
+						<span><a href ="#"><img src="img/ic_sch.png" alt="상품명 검색"></a></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- 상품추가 본문 -->
+		<div id="" class="item_add_area">
+			
+			<div class="item_name_wrap input_margin">
+				<strong>상품명</strong>
+				<div class="info_text">
+					<input type="text" title="상품명" placeholder="50자 이내로 입력하세요" maxlength="50" class="inp_txt" name="" value="시그니처 라떼">
+				</div>
+			</div>
+			
+			<form class="itemGP_select_wrap input_margin">
+				<strong><label for="itemGP_select">상품 그룹 <span>(다중선택 가능)</span></label></strong>
+				<select id="itemGP_select" name="itemGP_select" multiple >
+					<option value="커피">커피</option>
+					<option value="시그니처">시그니처</option>
+					<option value="콜드브루">콜드브루</option>
+					<option value="디카페인 커피">디카페인 커피</option>
+					<option value="음료">음료</option>
+				</select> 
+			</form>
+			
+			<form class="optionGP_select_wrap input_margin">
+				<strong><label for="optionGP_select">옵션 그룹 <span>(다중선택 가능)</span></label></strong>
+				<select id="optionGP_select" name="optionGP_select" multiple >
+					<option value="샷 추가">샷 추가</option>
+					<option value="바닐라 시럽">바닐라 시럽</option>
+					<option value="카라멜 시럽">카라멜 시럽</option>
+					<option value="헤이즐넛 시럽">헤이즐넛 시럽</option>
+					<option value="얼음 많이">얼음 많이</option>
+					<option value="얼음 적게">얼음 적게</option>
+				</select> 
+			</form>
+			
+			<div class="item_price_wrap input_margin">
+				<strong>가격</strong>
+				<div class="info_text">
+					<input type="text" title="가격" placeholder="" maxlength="" class="inp_txt" name="" value="6,000">
+				</div>
+			</div>
+		</div><!-- // item_add_area END -->
+
+	</div>
+	
+	
+	
+	
+	
+	<!-- 상품, 옵션 플로트 추가 버튼 -->
+	<div id="floatBtn">
+		<span><a href ="item_add.html"><img src="img/ic_item_add.png" alt="상품그룹 추가"></a></span>
+	</div>
+	
+	
+
+	
+	
+</body>
+</html>
