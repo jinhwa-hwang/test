@@ -2,30 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>index</title>
-	<!-- <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minium-scale=1.0,maximum-scale=1.0, user-scalable=no”> -->
+	<title>상품그룹 관리</title>
+	<!--<meta name=”viewport” content=”width=device-width,initial-scale=1.0,minium-scale=1.0,maximum-scale=1.0, user-scalable=no”>-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<style type="text/css">
 	@import url("css/itemcss.css");
 	</style>
-	
-	<script>
-		function openTab(evt, tabName) {
-		  var i, content, tablinks;
-		  content = document.getElementsByClassName("content");
-		  for (i = 0; i < content.length; i++) {
-			content[i].style.display = "none";
-		  }
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-		  document.getElementById(tabName).style.display = "block";
-		  evt.currentTarget.className += " active";
-		}
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-	</script>
+
 </head>
 
 <body>
@@ -40,10 +23,10 @@
 
 		<div id="gnb">
 			<ul>	
-				<li><a href ="#" class="tablinks" onclick="openTab(event, 'itemGp')" id="defaultOpen">상품그룹</a></li>
-				<li><a href ="#" class="tablinks" onclick="openTab(event, 'item')">상품</a></li>
-				<li><a href ="#" class="tablinks" onclick="openTab(event, 'optionGp')">옵션그룹</a></li>
-				<li><a href ="#" class="tablinks" onclick="openTab(event, 'option')">옵션</a></li>
+				<li><a href ="index.html" class="tablinks active">상품그룹</a></li> <!--onclick="openTab(event, 'itemGp')" id="defaultOpen"-->
+				<li><a href ="item.html" class="tablinks">상품</a></li><!-- onclick="openTab(event, 'item')"-->
+				<li><a href ="option_gp.html" class="tablinks">옵션그룹</a></li> <!--onclick="openTab(event, 'optionGp')"-->
+				<li><a href ="option.html" class="tablinks">옵션</a></li> <!--onclick="openTab(event, 'option')"-->
 			</ul>
 		</div>
 	</div>
@@ -82,259 +65,6 @@
 	</div>
 	
 	
-	<!-- 상품 본문 -->
-	<div id="item" class="content">
-		
-		
-		<!-- 상품 : 검색부분 -->
-		<div id="listHeader"> 
-			<ul>
-				<li class="list_total">
-					<div>
-						<span>총</span>
-						<span>52</span>
-						<span>개 상품</span>
-					</div>
-				</li>
-				<li class="list_sch">
-					<div>
-						<span><input type="text" placeholder="상품명 검색"></span>
-						<span><a href ="#"><img src="img/ic_sch.png" alt="상품명 검색"></a></span>
-					</div>
-				</li>
-			</ul>
-		</div>
-		
-		<!-- 상품 : 본문부분 -->
-		<div id="itemList" class="item_list">
-			<ol>
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">아메리카노</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">3,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">아메리카노</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">3,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-				
-				<li>
-					<div>
-						<ul>
-							<!-- 상품명 --><li class="item_name">카페 라떼</li>
-							<!-- 상품그룹 --><li class="item_gp">커피</li>
-							<!-- 가격 --><li class="item_price">4,000</li>
-						</ul>
-					</div>
-				</li>
-			</ol>
-		</div>
-
-	</div>
-	
-	<!-- 옵션그룹 본문 -->
-	<div id="optionGp" class="content">
-		<!-- 옵션그룹 : 검색부분 -->
-		<div id="listHeader"> 
-			<ul>
-				<li class="list_total">
-					<div>
-						<span>총</span>
-						<span>52</span>
-						<span>개 옵션 그룹</span>
-					</div>
-				</li>
-			</ul>
-		</div>
-		
-		<!-- 옵션 그룹 : 본문부분 -->
-		<div id="optionGpList" class="item_list">
-			<ol>
-				<li>
-					<div>
-						<ul>
-							<!-- 옵션그룹명 --><li class="optiongp_name">샷 추가</li>
-						</ul>
-					</div>
-				</li>
-			</ol>
-		</div>
-	</div>
-	
-	<!-- 옵션 본문 -->
-	<div id="option" class="content">
-		<!-- 옵션 : 검색부분 -->
-		<div id="listHeader"> 
-			<ul>
-				<li class="list_total">
-					<div>
-						<span>총</span>
-						<span>52</span>
-						<span>개 옵션</span>
-					</div>
-				</li>
-				<li class="list_sch">
-					<div>
-						<span><input type="text" placeholder="옵션명 검색"></span>
-						<span><a href ="#"><img src="img/ic_sch.png" alt="옵션명 검색"></a></span>
-					</div>
-				</li>
-			</ul>
-		</div>
-		
-		<!-- 옵션 : 본문부분 -->
-		<div id="optionList" class="item_list">
-			<ol>
-				<li>
-					<div>
-						<ul>
-							<!-- 옵션명 --><li class="option_name"></li>
-						</ul>
-					</div>
-				</li>
-			</ol>
-		</div>
-	</div>
 	
 	<!-- 상품, 옵션 플로트 추가 버튼 -->
 	<div id="floatBtn">
