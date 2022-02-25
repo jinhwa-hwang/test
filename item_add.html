@@ -67,9 +67,9 @@
 		<div id="" class="item_add_area">
 			
 			<div class="item_name_wrap input_margin">
-				<strong>상품명</strong>
+				<strong><label for="itemName">상품명</label></strong>
 				<div class="info_text">
-					<input type="text" title="상품명" placeholder="50자 이내로 입력하세요" maxlength="50" class="inp_txt" name="" value="시그니처 라떼">
+					<input type="text" title="상품명" placeholder="50자 이내로 입력하세요" maxlength="50" class="inp_txt" name="itemName" id="itemName" value="시그니처 라떼">
 				</div>
 			</div>
 			
@@ -97,9 +97,45 @@
 			</form>
 			
 			<div class="item_price_wrap input_margin">
-				<strong>가격</strong>
+				<strong><label for="itemPrice">가격</label></strong>
+				<div class="info_text info_price">
+					<input type="text" title="가격" placeholder="" maxlength="" name="itemPrice" id="itemPrice" value="6,000">
+				</div>
+			</div>
+			
+			<div class="item_radio_wrap input_margin">
+				<strong><label for="itemTax1">부가세</label></strong>
 				<div class="info_text">
-					<input type="text" title="가격" placeholder="" maxlength="" class="inp_txt" name="" value="6,000">
+					<input type="radio" id="itemTax1" name="itemTax"  checked="checked" value="기본값"><label for="itemTax1">기본값</label>
+					<input type="radio" id="itemTax2" name="itemTax"  value="과세"><label for="itemTax2">과세</label>
+					<input type="radio" id="itemTax3" name="itemTax"  value="면세"><label for="itemTax3">면세</label>
+				</div>
+			</div>
+			
+			<div class="item_radio_wrap input_margin">
+				<strong><label for="itemTip1">봉사료</label></strong>
+				<div class="info_text">
+					<input type="radio" id="itemTip1" name="itemTip"  checked="checked" value="기본값"><label for="itemTip1">기본값</label>
+					<input type="radio" id="itemTip2" name="itemTip"  value="과세"><label for="itemTip2">부과</label>
+					<input type="radio" id="itemTip3" name="itemTip"  value="면세"><label for="itemTip3">없음</label>
+				</div>
+			</div>
+			<div class="item_radio_wrap input_margin">
+				<strong><label for="itemKiosk1">키오스크</label></strong>
+				<div class="info_text">
+					<input type="radio" id="itemKiosk1" name="itemKiosk" checked="checked" value="기본값"><label for="itemKiosk1">노출</label>
+					
+					<div class="opt_btn_wrap">
+						<ul>
+							<li><a href ="" class="opt_btn btn_on">라벨 없음</a></li>
+							<li><a href ="" class="opt_btn btn_off">신상품</a></li>
+							<li><a href ="" class="opt_btn btn_off">인기메뉴</a></li>
+							<li><a href ="" class="opt_btn btn_off">품절</a></li>
+						</ul>
+					</div>
+					<div>
+						<input type="radio" id="itemKiosk2" name="itemKiosk"  value="과세"><label for="itemKiosk2">노출안함</label>
+					</div>
 				</div>
 			</div>
 		</div><!-- // item_add_area END -->
