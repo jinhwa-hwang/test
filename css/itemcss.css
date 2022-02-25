@@ -211,7 +211,7 @@ div#header ul li, div#header ul li img {
     background: url(../img/ic_pw.png);
     background-size: cover;
 }
-input[type="password"]:focus {
+.login_area input[type="password"]:focus, .login_area input[type="password"]:required, .login_area input[type="text"] {
 	font-family: Dotum, '돋움', Arial, Helvetica, sans-serif;
 }
 
